@@ -1,2 +1,0 @@
-# ucmpltme.github.io
-Portfolio
