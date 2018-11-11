@@ -1,72 +1,145 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-<meta charset="utf-8">
-<title>PORTFOLIO-Web</title>
+	<meta charset="UTF-8">
+	<title>PORTFOLIO | D, Half Moon</title>
 
-<!--[if lt IE 9]>
-<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
-<![endif]-->
+	<link rel="shortcut icon" type="image/x-icon" href="img/favi.ico" />
 
-<link rel="shortcut icon" type="image/x-icon" href="favi.ico" />
-
-<style>
-* { margin:0; padding:0; }
-ul,ol,li { list-style:none; }
-
-#width_box { width:1000px; height:430px; position:absolute; top:50%; left:50%; margin-top:-215px; margin-left:-500px; }
-.box01 { width:700px;  margin:0 auto; }
-.box01 li { float:left; width:200px; height:100px; margin-bottom:50px; }
-.box01 li.c_mar { margin:0 50px; }
-.box01 li a { display:block; width:200px; height:100px; background-color:#555; text-align:center; text-decoration:none; color:#fff; line-height:100px; border-radius:50px; }
-.box01 li a:hover { background-color:#999; }
-
-</style>
-
+	<link href="css/common.css" rel="stylesheet" type="text/css"/>
+	<link href="css/home.css" rel="stylesheet" type="text/css"/>
 </head>
-
 
 <body>
 
-<div id="width_box">
+	<div class="wrap">
 
-	<ul class="box01">
+		<div class="intro">
+			<div class="moon intro_item intro_open">
+				<img src="img/moon_06.png" alt="달">
+			</div>
+			<div class="moon_line intro_item intro_open">
+				<img src="img/arc_line.png" alt="달 라인">
+			</div>
+			<h1 class="intro_title intro_item half_left intro_close">
+				<span id="intro_i">I Stay Awake</span>
+				<span id="intro_f">From Day To Dawn</span>
+			</h1>
+		</div> <!-- intro -->
 
-    	<li id="menu01">
-    		<a href="portfolio/lg_nsys/index.html" target="_blank" /> LG NSYS </a>
-    	</li>
-        <li id="menu02" class="c_mar">
-        	<a href="portfolio/the_bay_101/index.html" target="_blank" /> THE BAY 101 </a>
-        </li>
-        <li id="menu03">
-        	<a href="portfolio/leesle/index.html" target="_blank" /> LEESLE </a>
-        </li>
+		<header>
+			<div class="main_item" id="logo">
+				<a href="index.html">
+					D, Half Moon
+				</a>
+			</div>
+			<div class="gnb main_item">
+				<ul>
+					<li class="select"><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="work.html">WORKS</a></li>
+				</ul>
+			</div>
+			<div class="main_item" id="resume">
+				<a href="doc/resume_introduction.pdf" target="blank" class="transition">Resume</a>
+			</div>
+		</header>
 
+		<div class="main">
+			<div class="moon">
+				<img src="img/moon_06.png" alt="달">
+			</div>
+			<div class="moon_line">
+				<img src="img/arc_line.png" alt="달 라인">
+			</div>
+			<div class="title_wrap">
+				<h1 class="main_title half_left main_item">
+					<a id="title_d" href="#">D,</a>
+					<a id="title_h" href="#">Half Moon</a>
+				</h1>
+				<h1 class="link_title half_left main_item">
+					<a class="transition" id="link_a" href="about.html">About</a>
+					<a class="transition" id="link_w" href="work.html">Work List</a>
+				</h1>
+			</div>
+		</div> <!-- main -->
 
-        <li id="menu04">
-        	<a href="portfolio/mad_for_busan/index.html" target="_blank" /> MAD FOR BUSAN </a>
-        </li>
-        <li id="menu05" class="c_mar">
-        	<a href="portfolio/new_ace/index.html" target="_blank" /> NEW ACE </a>
-        </li>
-        <li id="menu06">
-        	<a href="portfolio/near_and_dear/index.html" target="_blank" /> NEAR AND DEAR </a>
-        </li>
+		<div class="mean main_item">
+			<ul>
+				<li class="select" id="mean_01">Idea</li>
+				<li id="mean_02">Endeavor</li>
+				<li id="mean_03">Fruition</li>
+			</ul>
+		</div>
+		
+		<div class="main_item" id="data">
+			09.27 THU · 16:00 PM · 23 ºC · <span>CLEAR</span>
+		</div>
 
+		<footer>
+			<div class="main_item" id="scroll">
+				<b></b>
+				<span>SCROLL</span>
+			</div>
+			<div class="main_item" id="location">SEL | KOREA</div>
+		</footer>
 
-        <li id="menu07">
-        	<a href="portfolio/andrew_lyman/index.html" target="_blank" /> ANDREW LYMAN </a>
-        </li>
-        <li id="menu08" class="c_mar">
-        	<a href="portfolio/equals/index.html" target="_blank" /> EQUALS </a>
-        </li>
-        <li id="menu09">
-        	<a href="portfolio/portfolio02/index.html" target="_blank" /> Portfolio 02 </a>
-        </li>
+		<div class="controller">
+			<div class="control_title control_item">
+				<h1 class="half_left">Endeavor</h1>
+				<span class="half_left">Half Moon</span>
+			</div>
+			<div class="weather half_top control_item">
+				<ul>
+					<li class="select">
+						<span class="transition"></span>
+						<a href="#">CLEAR</a>
+					</li>
+					<li>
+						<span class="transition"></span>
+						<a href="#">CLOUD</a>
+					</li>
+					<li>
+						<span class="transition"></span>
+						<a href="#">RAIN</a>
+					</li>
+					<li>
+						<span class="transition"></span>
+						<a href="#">SNOW</a>
+					</li>
+				</ul>
+			</div>
 
-    </ul>
-    
-</div>
+			<div class="time half_top control_item">
+				<ul>
+					<li>
+						<a class="transition" href="#">12:00</a>
+					</li>
+					<li class="select">
+						<a class="transition" href="#">16:00PM</a>
+					</li>
+					<li>
+						<a class="transition" href="#">20:00</a>
+					</li>
+					<li>
+						<a class="transition" href="#">04:00</a>
+					</li>
+					<li>
+						<a class="transition" href="#">08:00</a>
+					</li>
+				</ul>
+				<div id="slider"></div>
+			</div>
+		</div> <!-- controller -->
 
+	</div>	<!-- wrap -->
+
+	<script src="js/jquery_3.3.1.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/loader.js"></script>
+	<script src="js/resize.js"></script>
+	<script src="js/script.js"></script>
 </body>
+
 </html>
