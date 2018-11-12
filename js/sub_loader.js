@@ -111,14 +111,20 @@ var textShowAni = setTimeout(function(){
 
 	var dur = 1; 
 
-	TweenMax.set($('.title h1'), {y:25});
-	TweenMax.to($('.title h1'), dur, {y:0});
+	TweenMax.set($('#work_f'), {y:25});
+	TweenMax.to($('#work_f'), dur, {y:0});
 
-	TweenMax.set($('.num'), {y:25});
+	TweenMax.set($('#work_s'), {y:50});
+	TweenMax.to($('#work_s'), dur, {y:0});
+
+	TweenMax.set($('.num'), {y:50});
 	TweenMax.to($('.num'), dur, {y:0});
 
-	TweenMax.set($('.sub_title'), {x:50});
-	TweenMax.to($('.sub_title'), dur, {x:0});
+	TweenMax.set($('#sort'), {x:50});
+	TweenMax.to($('#sort'), dur, {x:0});
+
+	TweenMax.set($('.btn'), {x:100});
+	TweenMax.to($('.btn'), dur, {x:0});
 
 
     $('.title').show().stop(true).delay(0)
@@ -131,7 +137,7 @@ var textShowAni = setTimeout(function(){
     .animate({'opacity':1}, 1000)
 
     $('.role').show().stop(true).delay(300)
-    .animate({'opacity':1}, 1000)
+    .animate({'opacity':1}, 2000)
 
 }, 1000);
 
