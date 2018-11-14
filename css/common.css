@@ -49,7 +49,8 @@ header { -webkit-display:flex; display:flex;
 		/*background-color:red;*/ }
 
 #logo { -webkit-flex:1; -ms-flex:1; -moz-flex:1; flex:1; }
-#logo a { font-size:20px; font-weight:900; letter-spacing:0; }
+#logo a { font-size:20px; font-weight:900; letter-spacing:0; 
+		white-space:nowrap; }
 
 
 

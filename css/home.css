@@ -66,8 +66,8 @@ background-image:url(../img/text_mask_02.png);
 /*Data*/
 
 #data { z-index:1000000; position:absolute; bottom:3%; left:50%; 
-			font-size:17px; font-weight:400; padding:7px; text-align:center; 
-			-webkit-transform:translateX(-50%); -ms-transform:translateX(-50%); -moz-transform:translateX(-50%); -o-transform:translateX(-50%); transform:translateX(-50%); }
+		font-size:17px; font-weight:400; padding:7px; text-align:center; 
+		-webkit-transform:translateX(-50%); -ms-transform:translateX(-50%); -moz-transform:translateX(-50%); -o-transform:translateX(-50%); transform:translateX(-50%); white-space:nowrap; }
 #data span { font-weight:800; }
 
 #data:before, #data:after { content:''; position:absolute; left:0;
