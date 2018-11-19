@@ -14,7 +14,7 @@
 		<!-- intro -->
 		<div class="intro">
 			<div class="moon intro_item intro_open">
-				<img src="img/moon_06.png" alt="달">
+				<img src="" alt="달">
 			</div>
 			<div class="moon_line intro_item intro_open">
 				<img src="img/arc_line.png" alt="달 라인">
@@ -51,7 +51,7 @@
 		<!-- main -->
 		<div class="main">
 			<div class="moon">
-				<img src="img/moon_06.png" alt="달">
+				<img src="" alt="달">
 			</div>
 			<div class="moon_line">
 				<img src="img/arc_line.png" alt="달 라인">
@@ -71,7 +71,7 @@
 		<!-- mean -->
 		<div class="mean main_item">
 			<ul>
-				<li class="select" id="mean_01">Idea</li>
+				<li id="mean_01">Idea</li>
 				<li id="mean_02">Endeavor</li>
 				<li id="mean_03">Fruition</li>
 			</ul>
@@ -79,7 +79,12 @@
 		
 		<!-- data -->
 		<div class="main_item" id="data">
-			09.27 THU · 16:00 PM · 23 ºC · <span>CLEAR</span>
+			<ul id="api">
+				<!-- <li>Month.Day THU</li>
+				<li>Hour:Minute PM</li>
+				<li>Temp ˚C</li>
+				<li>CONDITION</li> -->
+			</ul>
 		</div>
 
 
@@ -104,13 +109,13 @@
 
 			<div class="weather half_top control_item">
 				<ul>
-					<li class="select">
+					<li>
 						<span class="transition"></span>
 						<a href="#">CLEAR</a>
 					</li>
 					<li>
 						<span class="transition"></span>
-						<a href="#">CLOUD</a>
+						<a href="#">CLOUDY</a>
 					</li>
 					<li>
 						<span class="transition"></span>
@@ -128,8 +133,8 @@
 					<li>
 						<a class="transition" href="#">12:00</a>
 					</li>
-					<li class="select">
-						<a class="transition" href="#">16:00PM</a>
+					<li>
+						<a class="transition" href="#">16:00</a>
 					</li>
 					<li>
 						<a class="transition" href="#">20:00</a>
@@ -153,6 +158,7 @@
 	<script src="js/loader.js"></script>
 	<script src="js/resize.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/data.js"></script>
 </body>
 
 </html>

@@ -2,6 +2,10 @@
 console.log ("Resize In!");
 
 
+// var oX = parseInt($('#box').data('x'), 10); //string. - number
+// var oY = $('#box').data('y');
+// var oW = $('#box').data('width');
+
 
 
 
@@ -90,11 +94,35 @@ function moonSize() {
 
 
 
+// var limitW = 500;
+// var limitH = 500;
+// var viewW = null;
+// var viewH = null;
 
-$(window).resize(function() {
-	moonSize();
-	titleSize();
-});
+
+// $(window).on('resize', function() {
+
+// 	var winW = $(window).width();
+// 	if(winW <= limitW){
+// 		viewW = limitW;
+// 		// $('body').addClass('min');
+// 		// body.min #header{position:absolute}
+// 	}else{
+// 		viewW = winW;
+// 	}
+// 	// viewW = (winW <= limitW) ? limitW : winW;
+// 	var winH = $(window).height();
+// 	if(winH <= limitH) {
+// 		viewH = limitH;
+// 	}else{
+// 		viewH = winH;
+// 	}
+
+
+// 	console.log(viewW, viewH);
+// 	moonSize();
+// 	titleSize();
+// }).trigger('resize');
 
 
 

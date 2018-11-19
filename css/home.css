@@ -65,10 +65,15 @@ background-image:url(../img/text_mask_02.png);
 
 /*Data*/
 
-#data { z-index:1000000; position:absolute; bottom:3%; left:50%; 
+#data { z-index:1000000; position:absolute; bottom:3%; left:50%; min-width:300px;
 		font-size:17px; font-weight:400; padding:7px; text-align:center; 
 		-webkit-transform:translateX(-50%); -ms-transform:translateX(-50%); -moz-transform:translateX(-50%); -o-transform:translateX(-50%); transform:translateX(-50%); white-space:nowrap; }
-#data span { font-weight:800; }
+
+#api, #api li { float:left; }
+#api li+li:before { content:' · '; margin:0 5px; }
+
+#api li:last-child { font-weight:800; }
+#api li:last-child::before { font-weight:400; }
 
 #data:before, #data:after { content:''; position:absolute; left:0;
 width:100%; height:1px; background-color:#c7b299; 
