@@ -50,6 +50,7 @@ function dateTime(){
     var $thisMoon = $('.moon img');
     var $mainMean = $('.mean li');
     var $controlTime = $('.controller .time li');
+    var $controlTitle = $('.controller .control_title');
 
     if(hours >= 12 && hours < 16){
         //12 - 15 // new moon
@@ -62,6 +63,9 @@ function dateTime(){
         $controlTime.eq(0).addClass('select');
         $controlTime.eq(0).children('a').append(' PM');
 
+        $controlTitle.children('h1').html('Idea');
+        $controlTitle.children('span').html('New Moon');
+
     } else if(hours >= 16 && hours < 20){
         //16 - 19 // half moon
         $thisMoon.attr("src","img/moon_02.png");
@@ -72,6 +76,9 @@ function dateTime(){
         $controlTime.removeClass('select');
         $controlTime.eq(1).addClass('select');
         $controlTime.eq(1).children('a').append('PM');
+
+        $controlTitle.children('h1').html('Endeavor');
+        $controlTitle.children('span').html('Half Moon');
 
     } else if((hours >= 20 && hours <= 24) || (hours >= 0 && hours < 4)){
         //20 -24, 0 - 3 // full moon
@@ -84,6 +91,9 @@ function dateTime(){
         $controlTime.eq(2).addClass('select');
         $controlTime.eq(2).children('a').append('PM');
 
+        $controlTitle.children('h1').html('Fruition');
+        $controlTitle.children('span').html('Full Moon');
+
     } else if(hours >= 4 && hours < 8){
         //4 - 8 // half moon
         $thisMoon.attr("src","img/moon_02.png");
@@ -95,6 +105,9 @@ function dateTime(){
         $controlTime.eq(3).addClass('select');
         $controlTime.eq(3).children('a').append('AM');
 
+        $controlTitle.children('h1').html('Endeavor');
+        $controlTitle.children('span').html('Half Moon');
+
     } else{
         //8 - 11 // new moon
         $thisMoon.attr("src","img/moon_01.png");
@@ -105,6 +118,9 @@ function dateTime(){
         $controlTime.removeClass('select');
         $controlTime.eq(4).addClass('select');
         $controlTime.eq(4).children('a').append('AM');
+
+        $controlTitle.children('h1').html('Idea');
+        $controlTitle.children('span').html('New Moon');
     }
 }
 
