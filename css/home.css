@@ -25,6 +25,8 @@ background-position:bottom left;
 -webkit-text-fill-color:transparent;
 }
 
+#intro_i { background-position:top right; }
+
 .intro_title span+span { margin-top:0%; }
 .title_wrap h1 a a+a { margin-top:-3%; }
 

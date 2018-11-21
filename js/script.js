@@ -7,29 +7,41 @@ console.log (window.innerWidth, window.innerHeight);
 
 
 // Mouse Positionparallax
-var $parallax = document.querySelectorAll('.parallax');
-var $parallaxR = document.querySelectorAll('.parallax_r');
 
-var screenW = window.innerWidth;
-var screenH = window.innerHeight;
+$(document).ready(function(){
 
-var _paralS = 10;
-var _paralL = 35;
+    var winW = $(window).width();
+    var winH = $(window).height();
+
+    $(document).mousemove(function(e){
+
+        var mouseX = e.pageX,
+            mouseY = e.pageY;
+
+        var traX = ((4 * mouseX) / 570) + 40,
+            traY = ((4 * mouseY) / 570) + 50;
+
+        $('.title_parallax').css({
+            "background-position": traX + "%" + traY + "%"
+        });
+    });
+
+    $('.about .image').mousemove(function(e){
+
+        var mouseX = e.pageX,
+            mouseY = e.pageY;
+
+        var traX = ((4 * mouseX) / 570) + 40,
+            traY = ((4 * mouseY) / 570) + 50;
+
+        $('.img').css({
+            "background-position": traX + "%" + traY + "%"
+        });
+    });
+
+});
 
 
-
-function mouseParallax(e){
-
-   for(var i = 0; i < $parallax.length; i++){
-        $parallax[i].style.transform ='translate(' + e.pageX/screenW * - _paralL + 'px, ' + e.pageY/screenH * - _paralL + 'px)';
-    }
-
-    for(var i = 0; i < $parallaxR.length; i++){
-        $parallaxR[i].style.transform ='translate(' + e.pageY/screenH * _paralS + 'px, ' + e.pageX/screenW * _paralS + 'px)';
-    }
-}
-
-window.addEventListener('mousemove', mouseParallax);
 
 
 
@@ -75,12 +87,23 @@ function zoomIn(){
 	//console.log("Zoom Image");
 
 	$('.image .img').stop(true).delay(100)
-    .animate({'width':'120%', 'height':'110%', 'marginTop':'-5%', 'marginLeft':'-10%'}, 500)
+    .animate({
+        'width':'120%',
+        'height':'110%',
+        'marginTop':'-5%',
+        'marginLeft':'-10%'
+    }, 500)
+
 }
 
 function zoomOut(){
 	//console.log("Zoom Image");
 
 	$('.image .img').stop(true).delay(200)
-    .animate({'width':'100%', 'height':'100%', 'marginTop':'0', 'marginLeft':'0'}, 500)
+    .animate({
+        'width':'100%',
+        'height':'100%',
+        'marginTop':'0',
+        'marginLeft':'0'
+    }, 500)
 }
