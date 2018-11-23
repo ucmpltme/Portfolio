@@ -1,47 +1,149 @@
 // Ready
 console.log ("Script In!");
 console.log (window.innerWidth, window.innerHeight);
+console.log("data-sp" + $('#link_a').data("sp"))
 
 
 
 
 
-// Mouse Positionparallax
+$(document).ready(function() {
 
-$(document).ready(function(){
+    // if($.browser.msie) {
+    //     $('body').addClass('ie');
+    // }
 
-    var winW = $(window).width();
-    var winH = $(window).height();
 
-    $(document).mousemove(function(e){
 
-        var mouseX = e.pageX,
-            mouseY = e.pageY;
+    // Mouse Position Parallax
 
-        var traX = ((4 * mouseX) / 570) + 40,
-            traY = ((4 * mouseY) / 570) + 50;
+    var winW = $(window).width(),
+        winH = $(window).height();
 
-        $('.title_parallax').css({
-            "background-position": traX + "%" + traY + "%"
-        });
+    var conW = $('.contents').width(),
+        proW = $('.profile').width();
+
+    var moveSpeed = 0.75;
+    var bigMove = 30, smallMove = 50, minMove = 100, move = 10;
+
+    $('body').mousemove(function(e) {
+        //console.log(e.pageX, e.pageY);
+
+        // var posX = ((e.pageX - winW / 2) / 30) * - 1;
+        // var posY = ((e.pageY - winH / 2) / 30) * - 1;
+
+        var posX = (e.pageX - winW / 2);
+        var posY = (e.pageY - winH / 2);
+        //console.log(posX, posY);
+
+        TweenMax.to($('.big_move'), moveSpeed, {
+            css: {
+                transform : "translate(" + (posX / bigMove) + "px, " + (posY / bigMove) + "px"
+            }
+        })
+
+        TweenMax.to($('.small_move'), moveSpeed, {
+            css: {
+                transform : "translate(" + (posX / smallMove) + "px, " + (posY / smallMove) + "px"
+            }
+        })
+
+        TweenMax.to($('.big_move_r'), moveSpeed, {
+            css: {
+                transform : "translate(" + (- posX / bigMove) + "px, " + (- posY / bigMove) + "px"
+            }
+        })
+
+        TweenMax.to($('.small_move_r'), moveSpeed, {
+            css: {
+                transform : "translate(" + (- posX / smallMove) + "px, " + (- posY / smallMove) + "px"
+            }
+        })
+
+        TweenMax.to($('.etc_move'), moveSpeed, {
+            css: {
+                transform : "translate(" + (posX / minMove) + "px, " + (posY / minMove) + "px"
+            }
+        })
+
+        TweenMax.to($('.etc_move_r'), moveSpeed, {
+            css: {
+                transform : "translate(" + (- posX / minMove) + "px, " + (- posY / minMove) + "px"
+            }
+        })
+
+
+        TweenMax.to($('.move_01'), moveSpeed, {
+            css: {
+                transform : "translate(" + (posX / move) + "px, " + (posY / move) + "px"
+            }
+        })
+
+        TweenMax.to($('.move_02'), moveSpeed, {
+            css: {
+                transform : "translate(" + (- posX / move) + "px, " + (- posY / move) + "px"
+            }
+        })
+
+
+
+        // Text Mask Parallax
+
+        TweenMax.to($('.p_bg'), moveSpeed, {
+            css: {
+                backgroundPosition : ((posX / minMove) + 50) + "% " + ((posY / minMove) + 50) + "%"
+            }
+        })
+
+        TweenMax.to($('.link_mouse'), moveSpeed, {
+            css: {
+                backgroundPosition : ((posX / bigMove) + 50) + "% " + ((posY / bigMove) + 50) + "%"
+            }
+        })
+
     });
 
-    $('.about .image').mousemove(function(e){
+    $('.about .contents').mousemove(function(e) {
 
-        var mouseX = e.pageX,
-            mouseY = e.pageY;
+        var posX = (e.pageX - winW / 2);
+        var posY = (e.pageY - winH / 2);
 
-        var traX = ((4 * mouseX) / 570) + 40,
-            traY = ((4 * mouseY) / 570) + 50;
+        TweenMax.to($('.contents #color'), moveSpeed, {
+            css: {
+                transform : "translate(" + (- posX / bigMove) + "px, " + (- posY / bigMove) + "px"
+            }
+        })
 
-        $('.img').css({
-            "background-position": traX + "%" + traY + "%"
-        });
+        TweenMax.to($('.text_box h1'), moveSpeed, {
+            css: {
+                transform : "translate(" + (posX / smallMove) + "px, " + (posY / smallMove) + "px"
+            }
+        })
+        
     });
+
+    $('.profile').mousemove(function(e) {
+
+        var posX = (e.pageX - conW - proW / 2);
+        var posY = (e.pageY - winH / 2);
+        //console.log(posX, posY);
+
+        TweenMax.to($('#img'), moveSpeed, {
+            css: {
+                transform : "translate(" + (- posX / bigMove) + "px, " + (- posY / bigMove) + "px"
+            }
+        })
+
+        TweenMax.to($('.img_box h1'), moveSpeed, {
+            css: {
+                transform : "translate(" + (posX / smallMove) + "px, " + (posY / smallMove) + "px"
+            }
+        })
+
+    });
+
 
 });
-
-
 
 
 
@@ -78,32 +180,47 @@ function noSub(){
 
 
 
+
+//Title link Mouseover
+
+$('.link_title a').on('mouseover', function(){
+    console.log("mouseOn");
+    $(this).addClass('link_mouse');
+})
+
+$('.link_title a').on('mouseout', function(){
+    $(this).removeClass('link_mouse');
+})
+
+
+
+
+
 // About Image
 
-$('.image').on('mouseover', zoomIn)
-$('.image').on('mouseout', zoomOut)
+$('.profile').on('mouseover', zoomIn)
+$('.profile').on('mouseout', zoomOut)
 
 function zoomIn(){
 	//console.log("Zoom Image");
 
-	$('.image .img').stop(true).delay(100)
-    .animate({
-        'width':'120%',
-        'height':'110%',
-        'marginTop':'-5%',
-        'marginLeft':'-10%'
+	$('#img img').stop(true).animate({
+        'height':'130%',
+        'marginTop' : - ($('#img img').height() / 2)
     }, 500)
+
+    $('.img_box h1').stop(true)
+    .animate({'opacity':0.75}, 2000, 'easeOutCubic')
 
 }
 
 function zoomOut(){
 	//console.log("Zoom Image");
 
-	$('.image .img').stop(true).delay(200)
-    .animate({
-        'width':'100%',
-        'height':'100%',
-        'marginTop':'0',
-        'marginLeft':'0'
+	$('#img img').stop(true).animate({
+        'height':'135%'
     }, 500)
+
+    $('.img_box h1').stop(true).delay(100)
+    .animate({'opacity':0.15}, 2000, 'easeOutCubic')
 }

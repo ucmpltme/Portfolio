@@ -49,13 +49,19 @@ var aboutShowAni = setTimeout(function(){
 	TweenMax.set($('.text_box h1'), {y:100});
 	TweenMax.to($('.text_box h1'), dur, {y:0});
 
+	TweenMax.set($('.img_box h1'), {y:100});
+	TweenMax.to($('.img_box h1'), dur, {y:0});
+
 	TweenMax.set($('.text'), {y:50});
 	TweenMax.to($('.text'), dur, {y:0});
 
 	TweenMax.set($('#color'), {x:100});
 	TweenMax.to($('#color'), dur, {x:0});
 
-    $('.image').show().stop(true).delay(700)
+	TweenMax.set($('#img'), {scaleX:0.85, scaleY:0.85});
+	TweenMax.to($('#img'), dur, {scaleX:1, scaleY:1});
+
+    $('.profile').show().stop(true).delay(700)
     .animate({'opacity':1}, 1500, 'easeInOutCubic')
 
     $('.text_box').show().stop(true).delay(500)
@@ -102,7 +108,7 @@ var scrollMov = function(){
 
 var workShowAni = function(){
 
-    $('.image').show().stop(true).delay(500)
+    $('.profile').show().stop(true).delay(500)
     .animate({'opacity':1}, 700)
 
 };

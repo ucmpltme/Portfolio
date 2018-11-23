@@ -11,47 +11,70 @@ function titleSize() {
 
 	//intro
 	$('.intro_title').css({
-		"fontSize" : $('.wrap').height() / 8,
-		"marginTop" : - ($('.intro_title').height() / 2) - 15
+		"fontSize" : $(window).height() / 8,
+		"marginTop" : - ($('.intro_title').height() / 2),
+		"marginLeft" : - ($('.intro_title').width() / 2)
 	});
 
 
 	//main
 	$('.title_wrap h1').css({
-		"marginTop" : - ($('.title_wrap h1').height() / 2) - 15
+		"marginTop" : - ($('.title_wrap h1').height() / 2),
+		"marginLeft" : - ($('.title_wrap h1').width() / 2)
 	});
 
 	$('.title_wrap h1 a').css({
-		"fontSize" : $('.wrap').height() / 7
+		"fontSize" : $(window).height() / 7
+	});
+
+	$('.mean ul li').css({
+		"fontSize" : $(window).height() / 50
 	});
 
 
 	//controller
-	$('.control_title').css({
-		"marginTop" : - ($('.control_title').height() / 2)
-	});
-
 	$('.control_title h1').css({
-		"fontSize" : $('.wrap').height() / 8
+		"fontSize" : $(window).height() / 7
 	});
 
 	$('.control_title span').css({
-		"fontSize" : $('.wrap').height() / 12
+		"fontSize" : $(window).height() / 12
+	});
+
+	$('.control_title').css({
+		"marginTop" : - ($('.control_title').height() / 2),
+		"marginLeft" : - ($('.control_title').width() / 2)
 	});
 
 
-	//etc
-	$('.mean ul li').css({
-		"fontSize" : $('.wrap').height() / 50
+
+	//about
+	$('.text_box h1').css({
+		"fontSize" : $('.text_box').height() / 4
 	});
 
-	$('.about .text_box h1').css({
-		"fontSize" : $('.wrap').height() / 7
-	});
-
-	$('.about #color').css({
-		"width" : $('.wrap').height() / 1.7,
+	$('#color').css({
+		"width" : $(window).height() / 1.8,
+		"marginTop" : - ($('.about #color').height() / 2),
 		"minWidth" : 400
+	});
+
+	$('.img_box').css({
+		"marginLeft" : - ($('.img_box').width() / 2)
+	});
+
+	$('.img_box h1').css({
+		"fontSize" : $('.text_box').height() / 5
+	});
+
+	$('#img img').css({
+		"marginTop" : - ($('#img img').height() / 2)
+	});
+
+
+	//work
+	$('.work .title h1 span').css({
+		"fontSize" : $('.left').height() / 3.7
 	});
 
 };
@@ -60,8 +83,8 @@ function titleSize() {
 
 function moonSize() {
 
-	var moonLineW = $('.wrap').height() / 1.6;
-	var moonW = ($('.wrap').height() / 1.6) * 0.97;
+	var moonLineW = $(window).height() / 1.6;
+	var moonW = ($(window).height() / 1.6) * 0.97;
 
 	$('.moon_line').css({
 		"width" : moonLineW,
@@ -91,7 +114,7 @@ function moonSize() {
 $(window).on('resize', function() {
 	moonSize();
 	titleSize();
-});
+}).trigger('resize');
 
 titleSize();
 moonSize();

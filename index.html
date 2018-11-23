@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>PORTFOLIO | D, Half Moon</title>
 	<link rel="shortcut icon" type="image/x-icon" href="img/favi.ico" />
 	<link href="css/common.css" rel="stylesheet" type="text/css"/>
@@ -13,15 +14,15 @@
 
 		<!-- intro -->
 		<div class="intro">
-			<div class="moon intro_item intro_open">
+			<div class="moon intro_item intro_open big_move_r">
 				<img src="" alt="달">
 			</div>
 			<div class="moon_line intro_item intro_open">
 				<img src="img/arc_line.png" alt="달 라인">
 			</div>
-			<h1 class="intro_title intro_item half_left intro_close">
-				<span id="intro_i" class="title_parallax">I Stay Awake</span>
-				<span id="intro_f" class="title_parallax">From Day To Dawn</span>
+			<h1 class="intro_title intro_item intro_close">
+				<span id="intro_i" class="etc_move p_bg">I Stay Awake</span>
+				<span id="intro_f" class="small_move p_bg">From Day To Dawn</span>
 			</h1>
 		</div> <!-- intro -->
 
@@ -42,7 +43,7 @@
 				</ul>
 			</div>
 			<div class="main_item" id="resume">
-				<a href="doc/resume_introduction.pdf" target="blank" class="transition">Resume</a>
+				<a href="doc/yoon_dahye_resume_introduction.pdf" target="blank" class="transition" download>Resume</a>
 			</div>
 		</header>
 
@@ -50,26 +51,26 @@
 
 		<!-- main -->
 		<div class="main">
-			<div class="moon">
+			<div class="moon big_move_r">
 				<img src="" alt="달">
 			</div>
-			<div class="moon_line">
+			<div class="moon_line small_move_r">
 				<img src="img/arc_line.png" alt="달 라인">
 			</div>
 			<div class="title_wrap">
-				<h1 class="main_title half_left main_item">
-					<a id="title_d" class="title_parallax" href="#">D,</a>
-					<a id="title_h" class="title_parallax" href="#">Half Moon</a>
+				<h1 class="main_title main_item">
+					<a id="title_d" class="etc_move p_bg" href="#">D,</a>
+					<a id="title_h" class="small_move p_bg" href="#">Half Moon</a>
 				</h1>
-				<h1 class="link_title half_left main_item">
-					<a class="transition link_parallax" id="link_a" href="about.html">About</a>
-					<a class="transition link_parallax" id="link_w" href="work.html">Work List</a>
+				<h1 class="link_title main_item">
+					<a class="move_01 p_bg" id="link_a" href="about.html">About</a>
+					<a class="move_02 p_bg" id="link_w" href="work.html">Work List</a>
 				</h1>
 			</div>
 		</div> <!-- main -->
 
 		<!-- mean -->
-		<div class="mean main_item">
+		<div class="mean main_item etc_move_r">
 			<ul>
 				<li id="mean_01">Idea</li>
 				<li id="mean_02">Endeavor</li>
@@ -103,8 +104,8 @@
 		<!-- controller -->
 		<div class="controller">
 			<div class="control_title control_item">
-				<h1 class="half_left">Mean</h1>
-				<span class="half_left">Moon</span>
+				<h1 class="etc_move p_bg">Mean</h1>
+				<span class="small_move p_bg">Moon</span>
 			</div>
 
 			<div class="weather half_top control_item">
@@ -153,12 +154,15 @@
 	</div>	<!-- wrap -->
 
 	<script src="js/jquery_3.3.1.js"></script>
+	<script src="js/jquery.browser.min.js"></script>
 	<script src="js/jquery.easing.min.js"></script>
 	<script src="js/TweenMax.min.js"></script>
+
+	<script src="js/data.js"></script>
 	<script src="js/loader.js"></script>
 	<script src="js/resize.js"></script>
 	<script src="js/script.js"></script>
-	<script src="js/data.js"></script>
+	
 </body>
 
 </html>
