@@ -55,7 +55,7 @@ function titleSize() {
 
 	$('#color').css({
 		"width" : $(window).height() / 1.8,
-		"marginTop" : - ($('.about #color').height() / 2),
+		"marginTop" : - ($('#color').height() / 2),
 		"minWidth" : 400
 	});
 
@@ -111,10 +111,33 @@ function moonSize() {
 
 
 
+function workSize(){
+
+	var $titleH = $('.work .title h1');
+
+	$titleH.css({
+		"height" : $('.left').height() / 1.5
+	});
+
+	$('.work .title_show').css({
+		"height" : $titleH.height()
+	});
+
+	$('.work .title').css({
+		"top" : - $titleH.height()
+	});
+}
+
+
+
+
+
 $(window).on('resize', function() {
 	moonSize();
 	titleSize();
+	workSize();
 }).trigger('resize');
 
 titleSize();
 moonSize();
+workSize();

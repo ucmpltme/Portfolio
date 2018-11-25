@@ -32,6 +32,12 @@ function subShowAni(){
     $('.gnb').show().stop(true).delay(600)
     .animate({'opacity':1}, 2000)
 
+    $('.profile').show().stop(true).delay(700)
+    .animate({'opacity':1}, 1000)
+
+    $('.image_show').show().stop(true).delay(700)
+    .animate({'opacity':1}, 1000)
+
 };
 
 subShowAni();
@@ -60,9 +66,6 @@ var aboutShowAni = setTimeout(function(){
 
 	TweenMax.set($('#img'), {scaleX:0.85, scaleY:0.85});
 	TweenMax.to($('#img'), dur, {scaleX:1, scaleY:1});
-
-    $('.profile').show().stop(true).delay(700)
-    .animate({'opacity':1}, 1500, 'easeInOutCubic')
 
     $('.text_box').show().stop(true).delay(500)
     .animate({'opacity':1}, 1000)
@@ -106,14 +109,7 @@ var scrollMov = function(){
 
 
 
-var workShowAni = function(){
-
-    $('.profile').show().stop(true).delay(500)
-    .animate({'opacity':1}, 700)
-
-};
-
-var textShowAni = setTimeout(function(){
+var workShowAni = setTimeout(function(){
 
 	var dur = 1; 
 
@@ -146,7 +142,3 @@ var textShowAni = setTimeout(function(){
     .animate({'opacity':1}, 2000)
 
 }, 1000);
-
-
-
-workShowAni();

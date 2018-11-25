@@ -16,20 +16,19 @@ function dateTime(){
 
     var month = pad(d.getMonth() + 1, 2);
     var date = pad(d.getDate(), 2);
-    console.log("Month = " + month, "Date = " + date);
+    //console.log("Month = " + month, "Date = " + date);
 
     var weekday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     var weekIndex = d.getDay();
     var day = weekday[weekIndex];
-    console.log();
-    console.log("weekIndex = " + weekIndex, "Day = " + day);
+    //console.log("weekIndex = " + weekIndex, "Day = " + day);
 
     var hours = d.getHours();
     var minutes = d.getMinutes();
-    console.log("Hours = " + hours, "Minutes = " + minutes);
+    //console.log("Hours = " + hours, "Minutes = " + minutes);
 
     var timeString = pad(hours, 2) + ':' + pad(minutes, 2) ;
-    console.log(timeString);
+    //console.log(timeString);
 
 
 
@@ -140,22 +139,22 @@ $(document).ready(function() {
         dataType : 'json',
 
         success : function(response){
-            console.log(response);
+            //console.log(response);
 
             var results = response['query']['results'];
             var condition = results['channel']['item']['condition'];
 
             var html = '';
 
-            console.log(condition); 
+            //console.log(condition); 
             //{code: "26", date: "Thu, 15 Nov 2018 02:00 PM KST", temp: "58", text: "Cloudy"}
 
             var temp = condition['temp'],
                 text = condition['text'],
                 code = condition['code'];
 
-            console.log("Temp = " + temp);   
-            console.log("code = " + code, "Text = " + text);   
+            //console.log("Temp = " + temp);   
+            //console.log("code = " + code, "Text = " + text);   
 
 
 

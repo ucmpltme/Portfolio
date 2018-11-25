@@ -189,6 +189,21 @@ function clickScroll(){
 
 
 
+$(window).on("mousewheel",function(e){
+
+    if(e.originalEvent.wheelDelta >= 0) {
+        //console.log("Scroll Up");
+        goMain()
+
+    } else {
+        //console.log("Scroll Down");
+        goControl()
+    }
+
+});
+
+
+
 function goControl(){
 	//console.log("Go Contorller");
 

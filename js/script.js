@@ -1,7 +1,6 @@
 // Ready
 console.log ("Script In!");
-console.log (window.innerWidth, window.innerHeight);
-console.log("data-sp" + $('#link_a').data("sp"))
+console.log ("W = " + window.innerWidth, "H = " + window.innerHeight);
 
 
 
@@ -101,7 +100,15 @@ $(document).ready(function() {
             }
         })
 
+        TweenMax.to($('.img_box h1'), moveSpeed, {
+            css: {
+                backgroundPosition : ((posX / minMove) + 50) + "% " + ((posY / minMove) + 50) + "%"
+            }
+        })
+
     });
+
+
 
     $('.about .contents').mousemove(function(e) {
 
@@ -149,7 +156,7 @@ $(document).ready(function() {
 
 
 
-// Main Link
+// Main Title
 
 $('.title_wrap').on('mouseover', goSub)
 $('.title_wrap').on('mouseout', noSub)
@@ -180,11 +187,10 @@ function noSub(){
 
 
 
-
-//Title link Mouseover
+// Main Title Mouseover
 
 $('.link_title a').on('mouseover', function(){
-    console.log("mouseOn");
+    //console.log("mouseOn");
     $(this).addClass('link_mouse');
 })
 
@@ -196,10 +202,10 @@ $('.link_title a').on('mouseout', function(){
 
 
 
-// About Image
+// About Image Mouseover
 
-$('.profile').on('mouseover', zoomIn)
-$('.profile').on('mouseout', zoomOut)
+$('.profile').on('mouseover', zoomIn);
+$('.profile').on('mouseout', zoomOut);
 
 function zoomIn(){
 	//console.log("Zoom Image");
@@ -210,7 +216,7 @@ function zoomIn(){
     }, 500)
 
     $('.img_box h1').stop(true)
-    .animate({'opacity':0.75}, 2000, 'easeOutCubic')
+    .animate({'opacity':0.5}, 2000, 'easeOutCubic')
 
 }
 
@@ -224,3 +230,4 @@ function zoomOut(){
     $('.img_box h1').stop(true).delay(100)
     .animate({'opacity':0.15}, 2000, 'easeOutCubic')
 }
+
