@@ -175,7 +175,7 @@ var $controlTitle = $('.controller .control_title');
 var $moonList = $('.moon_list li')
 var $moonListBox = $('.moon_list')
 
-var _cuId = 2;
+var _cuId = dateTime();
 var _exId = _cuId;
 
 function timeClick(id){

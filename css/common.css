@@ -81,29 +81,3 @@ width:0; height:1px; background-color:#c7b299;
 #resume a { display:inline-block; padding:5px 25px; font-size:13px; 
 			/*background-color:red;*/ border:1px solid #c7b299; }
 #resume a:hover { color:#fff; background-color:#c7b299; }
-
-
-
-
-
-/*Cursor*/
-
-.cursor { z-index: 10000000; position:absolute;
-	background-color:#e8ecec;
-	width:25px; height: 25px; border-radius:100%;
-	/*transform:translate(5px, 5px);
-	user-select: none;
-	pointer-events: none;*/
-	transition: 
-		0.6s ease-in-out transform,
-		0.2s ease-in-out opacity;
-	
-	&.active {
-		opacity: 0.7;
-		transform: scale(3);
-	}
-	
-	&.hovered {
-		opacity: 0.08;
-	}
-}
