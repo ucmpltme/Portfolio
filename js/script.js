@@ -216,7 +216,7 @@ function zoomIn(){
     }, 500)
 
     $('.img_box h1').stop(true)
-    .animate({'opacity':0.25}, 2000, 'easeOutCubic')
+    .animate({'opacity':0.5}, 1000, 'easeOutCubic')
 
 }
 
@@ -228,5 +228,5 @@ function zoomOut(){
     }, 500)
 
     $('.img_box h1').stop(true).delay(100)
-    .animate({'opacity':0.15}, 2000, 'easeOutCubic')
+    .animate({'opacity':0.2}, 1000, 'easeOutCubic')
 }

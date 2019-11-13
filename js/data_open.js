@@ -1,3 +1,10 @@
+// Ready
+console.log ("API In!");
+
+
+
+
+
 var weatherApi = 'https://api.openweathermap.org/data/2.5/weather?lat=37.583328&lon=127&appid=1fb2243ab3d75e263ff5bfe3d79dfd99';
 
 function pad(num, size) {
@@ -343,7 +350,7 @@ $(document).ready(function() {
                 //html += '<li>' + temp + '℃</li>';
                 //html += '<li>' + text.toUpperCase() + '</li>';
 
-                $('#temp').empty().html(temp + '℃');
+                $('#temp').empty().html(temp + '˚C');
                 $('#condition').empty().html(text.toUpperCase());
 
                 //$api.append(html);

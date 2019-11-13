@@ -5,7 +5,7 @@ console.log ("Resize In!");
 
 
 
-// Main Resize
+// Resize
 
 function titleSize() {
 
@@ -58,9 +58,9 @@ function titleSize() {
 	});
 
 	$('#color').css({
-		"width" : $(window).height() / 1.8,
-		"marginTop" : - ($('#color').height() / 2),
-		"minWidth" : 400
+		"width" : $(window).height() / 2,
+		"marginTop" : - ($('#color').height() / 1.5),
+		"minWidth" : 300
 	});
 
 	$('.img_box').css({
@@ -68,7 +68,12 @@ function titleSize() {
 	});
 
 	$('.img_box h1').css({
-		"fontSize" : $('.text_box').height() / 5
+		"fontSize" : $('.text_box').height() / 6
+	});
+
+	$('#img').css({
+		"marginLeft" : - ($('#img').width() / 2),
+		"marginTop" : - ($('#img').height() / 2)
 	});
 
 	$('#img img').css({
