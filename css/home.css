@@ -199,8 +199,8 @@ background-repeat:repeat;
 #cloudy { z-index:100000; display:none; }
 .cloud { position:absolute; top:50%; }
 .cloud img { width:100%; }
-#cloud_01 { left:-25%; margin-top:-10%; opacity:0.2; }
-#cloud_02 { right:-35%; margin-top:-5%; opacity:0.3; }
+#cloud_01 { left:-25%; margin-top:-10%; opacity:0.3; }
+#cloud_02 { right:-35%; margin-top:-5%; opacity:0.5; }
 #cloud_03 { left:15%; opacity:0.7; margin-top:-15%; opacity:0.75; }
 
 
