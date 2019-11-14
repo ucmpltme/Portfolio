@@ -121,19 +121,19 @@ function textFill(){
         //console.log("equals")
         $sort.empty().html('Web Design');
         $num.empty().html('02');
-        $btn.attr('href', 'doc/clay/index.html');
+        $btn.attr('href', 'doc/moon/index.html');
 
     } else if(i == 3){
         //console.log("pagatonia")
         $sort.empty().html('Web Design');
         $num.empty().html('03');
-        $btn.attr('href', 'doc/inside_patagonia/index.html');
+        $btn.attr('href', 'doc/patagonia/index.html');
 
     } else if(i == 4 || i == 0){
         //console.log("clay")
         $sort.empty().html('App Design');
         $num.empty().html('04');
-        $btn.attr('href', 'doc/inside_patagonia/index.html');
+        $btn.attr('href', 'doc/equals/index.html');
     }
 
 }
