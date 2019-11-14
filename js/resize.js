@@ -59,7 +59,6 @@ function titleSize() {
 
 	$('#color').css({
 		"width" : $(window).height() / 2,
-		"marginTop" : - ($('#color').height() / 1.5),
 		"minWidth" : 300
 	});
 
