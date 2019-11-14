@@ -51,10 +51,10 @@ ul.image li a {
 	width:100%; height:100%;
 	cursor:default;
 	background:url(../img/work_0.jpg) no-repeat center center; 
-	background-size:cover; 
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
+	background-size:cover; 
 }
 ul.image li#i_01 a {
 	background-image:url(../img/work_1.jpg);
@@ -65,7 +65,6 @@ ul.image li#i_02 a {
 ul.image li#i_03 a {
 	background-image:url(../img/work_3.jpg);
 }
-
 
 
 .left {
@@ -89,6 +88,10 @@ ul.title li {
 }
 .title h1 {
 	margin-left:3%;
+}
+.title h1 a {
+	display:inline-block;
+	/*background-color:pink;*/
 }
 .title h1 span {
 	display:block;
@@ -233,7 +236,7 @@ footer {
 /*AddClass*/
 
 .select, .select a {
-	font-weight:700;
+	font-weight:600;
 	color:#525d69;
 }
 

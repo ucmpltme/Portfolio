@@ -171,6 +171,7 @@ introOpenAni ();
 // Controller
 
 $('#scroll').on('click', clickScroll)
+$('#data').on('click', clickScroll)
 
 function clickScroll(){
 

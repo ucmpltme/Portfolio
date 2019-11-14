@@ -115,13 +115,13 @@ function textFill(){
         //console.log("andrew")
         $sort.empty().html('Web Design');
         $num.empty().html('01');
-        $btn.attr('href', 'doc/andrew_lyman/index.html');
+        $btn.attr('href', 'doc/clay/index.html');
 
     } else if(i == 2){
         //console.log("equals")
         $sort.empty().html('Web Design');
         $num.empty().html('02');
-        $btn.attr('href', 'doc/equals/index.html');
+        $btn.attr('href', 'doc/clay/index.html');
 
     } else if(i == 3){
         //console.log("pagatonia")
@@ -133,7 +133,7 @@ function textFill(){
         //console.log("clay")
         $sort.empty().html('App Design');
         $num.empty().html('04');
-        $btn.attr('href', 'doc/clay/index.html');
+        $btn.attr('href', 'doc/inside_patagonia/index.html');
     }
 
 }
