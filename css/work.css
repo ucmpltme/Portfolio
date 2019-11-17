@@ -99,10 +99,10 @@ ul.title li {
 	font-size:135px; font-weight:; line-height:1.2; 
 	white-space:nowrap;
 	color:#c7b299;
-	background-image:url(../img/text_mask_02.png);
+/*	background-image:url(../img/text_mask_02.png);
 	background-position:top right; background-repeat:repeat; 
 	-webkit-background-clip:text;
-	-webkit-text-fill-color:transparent;
+	-webkit-text-fill-color:transparent;*/
 }
 .title h1 span+span {
 	margin-top:-2.5%;

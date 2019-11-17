@@ -44,10 +44,11 @@
 	font-family:linotype-didot, 'Italiana', serif;
 	font-weight:; line-height:1.2;
 	white-space:nowrap;
-	background-image:url(../img/text_mask.png);
+	opacity:0.8;
+	/*background-image:url(../img/text_mask.png);
 	background-position:50% 50%;
 	-webkit-background-clip:text;
-	-webkit-text-fill-color:transparent;
+	-webkit-text-fill-color:transparent;*/
 }
 
 
@@ -71,11 +72,15 @@
 }
 .link_title a.link_mouse { 
 	color:#c7b299;
-	background-image:url(../img/text_mask_02.png);
+	transition:color 0.5s;
+	-webkit-transition:color 0.5s;
+	-moz-transition:color 0.5s;
+	-o-transition:color 0.5s;
+	/*background-image:url(../img/text_mask_02.png);
 	transition:background-image 0.5s;
 	-webkit-transition:background-image 0.5s;
 	-moz-transition:background-image 0.5s;
-	-o-transition:background-image 0.5s; 
+	-o-transition:background-image 0.5s; */
 }
 
 
@@ -247,22 +252,24 @@ footer {
 	font-family:linotype-didot, 'Italiana', serif;
 	font-weight:; line-height:1.2;
 	text-align:center; white-space:nowrap; 
-	background-image:url(../img/text_mask.png);
+	opacity:0.9;
+/*	background-image:url(../img/text_mask.png);
 	background-position:50% 50%;
 	background-repeat:repeat; 
 	-webkit-background-clip:text;
-	-webkit-text-fill-color:transparent;
+	-webkit-text-fill-color:transparent;*/
 }
 .control_title span {
 	display:block; 
 	font-family:linotype-didot, 'Italiana', serif;
 	font-weight:; line-height:1.2;
 	text-align:center; white-space:nowrap;
-	background-image:url(../img/text_mask.png);
+	opacity:0.7;
+/*	background-image:url(../img/text_mask.png);
 	background-position:50% 50%;
 	background-repeat:repeat; 
 	-webkit-background-clip:text;
-	-webkit-text-fill-color:transparent;
+	-webkit-text-fill-color:transparent;*/
 	}
 
 
@@ -317,11 +324,11 @@ footer {
 .time ul {
 	margin-right:25px;
 }
-.time ul li+li a {
+.time ul li+li {
 	margin-top:35px;
 }
 .time ul li a {
-	float:right;
+	/*float:right;*/
 	opacity:0.35;
 	white-space:nowrap;
 }
