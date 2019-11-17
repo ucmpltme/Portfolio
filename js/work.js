@@ -121,7 +121,7 @@ function textFill(){
         //console.log("equals")
         $sort.empty().html('Web Design');
         $num.empty().html('02');
-        $btn.attr('href', 'doc/portfolio/moon/index.html');
+        $btn.attr('href', 'index.html');
 
     } else if(i == 3){
         //console.log("pagatonia")
