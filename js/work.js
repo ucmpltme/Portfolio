@@ -115,25 +115,25 @@ function textFill(){
         //console.log("andrew")
         $sort.empty().html('Web Design');
         $num.empty().html('01');
-        $btn.attr('href', 'doc/clay/index.html');
+        $btn.attr('href', 'doc/portfolio/clay/index.html');
 
     } else if(i == 2){
         //console.log("equals")
         $sort.empty().html('Web Design');
         $num.empty().html('02');
-        $btn.attr('href', 'doc/moon/index.html');
+        $btn.attr('href', 'doc/portfolio/moon/index.html');
 
     } else if(i == 3){
         //console.log("pagatonia")
         $sort.empty().html('Web Design');
         $num.empty().html('03');
-        $btn.attr('href', 'doc/patagonia/index.html');
+        $btn.attr('href', 'doc/portfolio/patagonia/index.html');
 
     } else if(i == 4 || i == 0){
         //console.log("clay")
         $sort.empty().html('App Design');
         $num.empty().html('04');
-        $btn.attr('href', 'doc/equals/index.html');
+        $btn.attr('href', 'doc/portfolio/equals/index.html');
     }
 
 }
