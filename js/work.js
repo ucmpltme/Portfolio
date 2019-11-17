@@ -121,7 +121,7 @@ function textFill(){
         //console.log("equals")
         $sort.empty().html('Web Design');
         $num.empty().html('02');
-        $btn.attr('href', 'index.html');
+        $btn.attr('href', 'https://ucmpltme.github.io');
 
     } else if(i == 3){
         //console.log("pagatonia")
