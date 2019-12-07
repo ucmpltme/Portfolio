@@ -1,0 +1,139 @@
+
+/*media query*/
+
+@media screen and (min-width:1941px) {
+
+}
+
+
+
+@media screen and (min-width:1440px) and (max-width:1940px)  {  
+
+}
+
+
+
+@media screen and (min-width:1024px) and (max-width:1439px) {  
+
+	/*Size Check*/
+
+	#scroll_bg {
+		background-color:red;
+	}
+
+
+	/*Description*/
+
+}
+
+
+
+@media screen and (min-width:840px) and (max-width:1023px) {  
+
+	/*Size Check*/
+
+	#scroll_bg {
+		background-color:orange;
+	}
+
+
+	/*Header*/
+
+	header {
+		left:3%; 
+		width:94%;
+	}
+
+
+	/*Description*/
+
+}
+
+
+
+@media screen and (min-width:720px) and (max-width:839px) {  
+
+	/*Size Check*/
+
+	#scroll_bg {
+		background-color:green;
+	}
+
+
+	/*Header*/
+
+	header {
+		left:3%; 
+		width:94%;
+	}
+
+
+	/*Description*/
+
+}
+
+
+
+@media screen and (min-width:500px) and (max-width:719px) {  
+
+	/*Size Check*/
+
+	#scroll_bg {
+		background-color:blue;
+	}
+
+
+	/*Header Show*/
+
+	header {
+		display:none;
+	}
+
+	#hamburger {
+		display:block;
+	}
+
+
+	/*Wave*/
+
+	#top_wave {
+		top:0px;
+		width:100%; height:26px;
+		background-size:174px 26px;
+	}
+
+
+
+
+	/*Description*/
+
+}
+
+
+
+@media screen and (max-width:499px) {  
+
+	/*Size Check*/
+
+	/*#scroll_bg {
+		background-color:pink;
+	}*/
+
+
+	/*Header Show*/
+
+	header {
+		display:none;
+	}
+
+	#hamburger {
+		display:block;
+	}
+
+
+	/*Wave*/
+
+
+	/*Description*/
+
+}
