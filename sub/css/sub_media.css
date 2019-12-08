@@ -37,6 +37,20 @@
 		max-width:1400px;
 	}
 
+	#img_wrap #w_img_top {
+		margin-bottom:0;
+	}
+
+	#img_wrap #w_img_bot {
+		margin-top:0;
+	}
+
+	#img_wrap #img_list {
+		-webkit-box-shadow:none;
+		-moz-box-shadow:none;
+		box-shadow:none;
+	}
+
 }
 
 
@@ -82,6 +96,20 @@
 
 	#img_wrap #img_list {
 		width:100%;
+	}
+
+	#img_wrap #w_img_top {
+		margin-bottom:0;
+	}
+
+	#img_wrap #w_img_bot {
+		margin-top:0;
+	}
+
+	#img_wrap #img_list {
+		-webkit-box-shadow:none;
+		-moz-box-shadow:none;
+		box-shadow:none;
 	}
 
 
@@ -142,6 +170,20 @@
 
 	#img_wrap #img_list {
 		width:100%;
+	}
+
+	#img_wrap #w_img_top {
+		margin-bottom:0;
+	}
+
+	#img_wrap #w_img_bot {
+		margin-top:0;
+	}
+
+	#img_wrap #img_list {
+		-webkit-box-shadow:none;
+		-moz-box-shadow:none;
+		box-shadow:none;
 	}
 
 
@@ -242,6 +284,20 @@
 		width:100%;
 	}
 
+	#img_wrap #w_img_top {
+		margin-bottom:0;
+	}
+
+	#img_wrap #w_img_bot {
+		margin-top:0;
+	}
+
+	#img_wrap #img_list {
+		-webkit-box-shadow:none;
+		-moz-box-shadow:none;
+		box-shadow:none;
+	}
+
 
 	/*Under Text*/
 
@@ -338,6 +394,20 @@
 
 	#img_wrap #img_list {
 		width:100%;
+	}
+
+	#img_wrap #w_img_top {
+		margin-bottom:0;
+	}
+
+	#img_wrap #w_img_bot {
+		margin-top:0;
+	}
+
+	#img_wrap #img_list {
+		-webkit-box-shadow:none;
+		-moz-box-shadow:none;
+		box-shadow:none;
 	}
 
 

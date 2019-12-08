@@ -9,6 +9,23 @@
 		font-size:20px;
 	}
 
+
+	/*Shape*/
+
+	#a_shape_green {
+		width:14%;
+		left:60%; 
+	}
+
+	#a_shape_pink {
+		width:22%;
+	}
+
+	#a_shape_yellow {
+		width:16%;
+		right:60%;
+	}
+
 }
 
 
@@ -49,6 +66,7 @@
 
 	#profile_wrap {
 		width:84%;
+		padding-top:10%;
 	}
 
 }
@@ -93,6 +111,7 @@
 
 	#profile_wrap {
 		width:84%;
+		padding-top:10%;
 	}
 
 }
@@ -143,7 +162,9 @@
 	/*Profile*/
 
 	#profile_wrap {
-		width:76%; max-width:500px;
+		width:76%;
+		max-width:500px;
+		padding-top:10%;
 	}
 
 	#text_wrap {
@@ -247,7 +268,9 @@
 	/*Profile*/
 
 	#profile_wrap {
-		width:76%; min-width:320px; 
+		width:76%;
+		min-width:320px; 
+		padding-top:10%;
 	}
 
 	#circle_img {
@@ -369,7 +392,9 @@
 	/*Profile*/
 
 	#profile_wrap {
-		width:76%; min-width:230px;
+		width:76%;
+		min-width:230px;
+		padding-top:10%;
 	}
 
 	#circle_img {

@@ -255,9 +255,9 @@ nav ul li a:hover b.wave_bar {
 #menu ul#menu_list li a {
 	display:block;
 	font-family:'Italiana', serif;
-	font-size:5rem; /*10-50px*/
+	font-size:40px;
 	text-align:center;
-	letter-spacing:0.3rem; /*10-3px*/
+	letter-spacing:3px;
 	white-space:nowrap;
 }
 

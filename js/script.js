@@ -24,23 +24,54 @@ window.onbeforeunload = function() {
 
 $(document).ready(function (){
 
-	//$('html').niceScroll();
-
-	$('html').niceScroll({
-		zindex:100000,
-		scrollspeed:200,
-		mousescrollstep:20,
-		cursorcolor:"#5f6245",
-		cursoropacitymin:0,
-		cursoropacitymax:1,
-		cursorwidth:"8px",
-		cursorminheight:100,
-		cursorborder:"0px solid #fff",
-		cursorborderradius:"4px",
-		background:"",
-		hidecursordelay:1000
-	});
+	nice();
+	
 });
+
+$(window).resize(function (){
+
+	nice();
+	
+});
+
+var nice = function(){
+
+	if(window.innerWidth < 720){
+		console.log("Slow Scroll Stop!")
+
+		$('html').getNiceScroll().remove();
+
+		$('html').niceScroll({
+			smoothscroll:false,
+			autohidemode:"hidden"
+		});
+	
+	}else {
+		console.log("Slow Scroll Play!")
+
+		$('html').getNiceScroll().remove();
+
+		$('html').niceScroll({
+			zindex:100000,
+			scrollspeed:100,
+			mousescrollstep:20,
+			cursorcolor:"#5f6245",
+			cursoropacitymin:0,
+			cursoropacitymax:1,
+			cursorwidth:"8px",
+			cursorminheight:100,
+			cursorborder:"0px solid #fff",
+			cursorborderradius:"4px",
+			background:"",
+			hidecursordelay:1000
+		});
+	}
+}
+
+	
+
+
+
 
 
 

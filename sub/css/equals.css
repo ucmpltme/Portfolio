@@ -16,7 +16,7 @@
 }
 
 #img_wrap #img_list img:first-child {
-	padding-top:150px;
+	padding-top:10%;
 	background-color:#2a4257;
 }
 

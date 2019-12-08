@@ -250,7 +250,7 @@ ul#descript li a:hover span b.wave_bar{
 	position:relative;
 	top:150px; left:50%;
 	width:84%;
-	max-width:1600px; min-width:260px;
+	min-width:260px;
 	/*background-color:red;*/
 	-webkit-transform:translateX(-50%);
 	-ms-transform:translateX(-50%);

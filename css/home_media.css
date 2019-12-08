@@ -1,5 +1,5 @@
 
-/*Media query*/
+/*Media query Width*/
 
 @media screen and (min-width:1941px) {  
 
@@ -7,6 +7,21 @@
 
 	html {
 		font-size:20px;
+	}
+
+
+	/*Shape*/
+
+	#m_shape_green {
+		width:40%;
+	}
+
+	#m_shape_pink {
+		width:24%;
+	}
+
+	#m_shape_yellow {
+		width:16%;
 	}
 
 }
@@ -48,7 +63,7 @@
 	#work_wrap {
 		width:84%;
 		max-width:none;
-		padding:8% 0 18%;
+		padding:16% 0 18%;
 	}
 
 }
@@ -93,7 +108,7 @@
 	#work_wrap {
 		width:84%;
 		max-width:none;
-		padding:8% 0 18%;
+		padding:16% 0 18%;
 	}
 
 	ul#work_list li {
@@ -110,7 +125,15 @@
 	}
 
 	#clay a h3 {
-		width:300px;
+		width:320px;
+	}
+
+	#near a h3 {
+		width:200px;
+	}
+
+	#malay a h3 {
+		width:200px;
 	}
 
 	.work_img {
@@ -158,7 +181,7 @@
 	#work_wrap {
 		width:84%;
 		max-width:none;
-		padding:8% 0 18%;
+		padding:20% 0 18%;
 	}
 
 	ul#work_list li {
@@ -176,6 +199,10 @@
 
 	#clay a h3 {
 		width:270px;
+	}
+
+	#malay a h3 {
+		width:200px;
 	}
 
 	.work_img {
@@ -251,7 +278,7 @@
 
 	#work_wrap {
 		width:100%;
-		padding:8% 0 50%;
+		padding:35% 0 50%;
 	}
 
 	#work_wrap > span {
@@ -359,7 +386,7 @@
 
 	#work_wrap {
 		width:100%;
-		padding:8% 0 60%;
+		padding:80% 0 60%;
 	}
 
 	#work_wrap > span {

@@ -8,7 +8,6 @@
 #section_main {
 	position:relative;
 	height:100%;
-	min-height:;
 	background-color:#f1ece6;
 }
 #section_cont {
@@ -87,7 +86,7 @@
 	top:0; left:50%;
 	width:60%;
 	max-width:1300px; min-width:320px;
-	padding:8% 0 16%;
+	padding:10% 0 16%;
 	/*background-color:red;*/
 	-webkit-transform:translateX(-50%);
 	-ms-transform:translateX(-50%);
