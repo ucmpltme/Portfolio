@@ -85,9 +85,10 @@ var scrollTop = $(window).scrollTop();
 $(window).scroll(function(){
 
 	var curTop = $(window).scrollTop();
+	console.log(scrollTop, curTop);
 
-	if(curTop > scrollTop){
-		alert(scrollTop,curTop);
+	if(curTop >= scrollTop){
+		// Scroll Down
 		$('header').css('top',-40);
 		$('#hamburger').css('top',-40);
 	}else{
