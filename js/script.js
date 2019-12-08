@@ -41,10 +41,11 @@ var nice = function(){
 
 		$('html').getNiceScroll().remove();
 
-		$('html').niceScroll({
-			smoothscroll:false,
-			autohidemode:"hidden"
-		});
+		// $('html').niceScroll({
+		// 	scrollspeed:0,
+		// 	smoothscroll:false,
+		// 	autohidemode:"hidden"
+		// });
 	
 	}else {
 		console.log("Slow Scroll Play!")
