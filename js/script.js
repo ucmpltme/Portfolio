@@ -86,7 +86,7 @@ $(window).scroll(function(){
 
 	var curTop = $(window).scrollTop();
 
-	if(curTop > scrollTop + 20){
+	if(curTop > scrollTop + 100){
 		// Scroll Down
 		$('header').css('top',-40);
 		$('#hamburger').css('top',-40);
