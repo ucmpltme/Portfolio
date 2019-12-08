@@ -81,7 +81,7 @@ var nice = function(){
 // Header Show
 
 var scrollTop = $(window).scrollTop();
-console.log(scrollTop);
+//console.log(scrollTop);
 
 $(window).scroll(function(){
 
