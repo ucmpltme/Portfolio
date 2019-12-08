@@ -114,6 +114,18 @@ $('ul#work_list li').mouseleave(function(){
 
 // Work Img Tilt
 
+/*$('.work_img').mouseenter(function(){
+	//console.log("Float-Down Mouse Enter");
+	$(this).addClass('float-down');
+});
+
+$('.work_img').mouseleave(function(){
+	//console.log("Float-Up Mouse Leave");
+	$(this).removeClass('float-down');
+	$(this).addClass('float-up');
+});*/
+
+
 var agent = navigator.userAgent.toLowerCase();
 
 if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
@@ -133,11 +145,9 @@ if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') !
 
 }else {
 	//alert("No, IE!");
-	$('.work_img').attr('class', 'work_img data-tilt');
-	$('#work_clay').attr('class', 'work_img m-data-tilt');
+	$('.work_all').attr('class', 'work_img work_all data-tilt');
+	$('.work_app').attr('class', 'work_img work_app m-data-tilt');
 };
-
-
 
 $(document).ready(function (){
 
@@ -155,7 +165,7 @@ $(document).ready(function (){
 	});
 
 	$('.m-data-tilt').tilt({
-		perspective:500
+		perspective:400
 	});
 
 });

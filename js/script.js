@@ -37,7 +37,7 @@ $(window).resize(function (){
 var nice = function(){
 
 	if(window.innerWidth < 720){
-		console.log("Slow Scroll Stop!")
+		//console.log("Slow Scroll Stop!")
 
 		$('html').getNiceScroll().remove();
 
@@ -48,7 +48,7 @@ var nice = function(){
 		// });
 	
 	}else {
-		console.log("Slow Scroll Play!")
+		//console.log("Slow Scroll Play!")
 
 		$('html').getNiceScroll().remove();
 
@@ -68,11 +68,6 @@ var nice = function(){
 		});
 	}
 }
-
-	
-
-
-
 
 
 
