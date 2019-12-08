@@ -57,7 +57,7 @@ var titleLoad = setTimeout(function(){
     TweenMax.set($('.cont-s'), {y:20});
 	TweenMax.to($('.cont-s'), dur, {y:0, ease:Back.easeOut.config(2)});
 
-	$('.cont-s').show().stop(true).delay(0)
+	$('.cont-s').stop(true).delay(0)
     .animate({'opacity':1}, 1000);
 
     $('#img_wrap').show().stop(true).delay(100)

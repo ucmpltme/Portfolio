@@ -264,7 +264,7 @@ nav ul li a:hover b.wave_bar {
 #menu ul#menu_doc {
 	position:absolute;
 	bottom:4%; left:50%;
-	width:173px;
+	width:153px;
 	-webkit-transform:translateX(-50%); 
 	-moz-transform:translateX(-50%); 
 	-o-transform:translateX(-50%); 
@@ -278,7 +278,7 @@ nav ul li a:hover b.wave_bar {
 }
 
 #menu ul#menu_doc li+li {
-	margin-left:40px;
+	margin-left:20px;
 }
 
 #menu ul#menu_doc li a {
@@ -391,7 +391,7 @@ footer {
 }
 
 #footer_text ul {
-	width:173px;
+	width:153px;
 	top:150px;
 }
 
