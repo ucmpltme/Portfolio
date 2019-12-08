@@ -81,13 +81,14 @@ var nice = function(){
 // Header Show
 
 var scrollTop = $(window).scrollTop();
+console.log(scrollTop);
 
 $(window).scroll(function(){
 
 	var curTop = $(window).scrollTop();
-	console.log(scrollTop, curTop);
+	//console.log(scrollTop, curTop);
 
-	if(curTop >= scrollTop){
+	if(curTop > scrollTop || curTop < 0){
 		// Scroll Down
 		$('header').css('top',-40);
 		$('#hamburger').css('top',-40);
