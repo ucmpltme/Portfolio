@@ -127,9 +127,11 @@ $(document).on('scroll', function(){
 		if (yTop + num < pageBottom){
 			//$this.css('opacity', 1);
 			$this.addClass('visible');
+			$this.find('img').addClass('scale');
 		} else {
 			//$this.css('opacity', 0);
 			$this.removeClass('visible');
+			$this.find('img').removeClass('scale');
 		};
 	});
 });
