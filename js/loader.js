@@ -8,9 +8,19 @@ console.log("Loader Js In!")
 
 // onLoad
 
-$(document).ready(function (){
+$(window).ready(function (){
 
-	//$('.item').hide();
+	//$('.item').css({'opacity':1});
+	
+});
+
+
+
+
+
+// Resize
+
+$(window).resize(function (){
 	
 });
 

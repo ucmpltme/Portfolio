@@ -29,8 +29,8 @@ $(window).scroll(function(e){
 	title_wrap.style.top = 50 - (scrollTop / 12) + '%';
 
 	m_shape_green.style.top = 0 - (scrollTop / 30) + '%';
-	m_shape_pink.style.top = 25 - (scrollTop / 10) + '%';
-	m_shape_yellow.style.bottom = 30 + (scrollTop / 14) + '%';
+	m_shape_pink.style.top = 50 - (scrollTop / 10) + '%';
+	m_shape_yellow.style.top = 50 - (scrollTop / 14) + '%';
 
 })
 

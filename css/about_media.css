@@ -13,17 +13,24 @@
 	/*Shape*/
 
 	#a_shape_green {
-		width:14%;
-		left:60%; 
+		top:50%; left:50%;
+		width:320px;
+		margin-top:-10px; 
+		margin-left:350px;
 	}
 
 	#a_shape_pink {
-		width:22%;
+		top:50%; left:50%;
+		width:460px;
+		margin-top:-480px; 
+		margin-left:50px;
 	}
 
 	#a_shape_yellow {
-		width:16%;
-		right:60%;
+		top:50%; left:50%;
+		width:360px;
+		margin-top:-160px; 
+		margin-left:-650px;
 	}
 
 }
@@ -43,23 +50,6 @@
 	/*#scroll_bg {
 		background-color:red;
 	}*/
-
-
-	/*Shape*/
-
-	#a_shape_green {
-		width:14%;
-		left:70%; 
-	}
-
-	#a_shape_pink {
-		width:22%;
-	}
-
-	#a_shape_yellow {
-		width:16%;
-		right:70%;
-	}
 
 
 	/*Profile*/
@@ -87,23 +77,6 @@
 	header {
 		left:3%; 
 		width:94%;
-	}
-
-
-	/*Shape*/
-
-	#a_shape_green {
-		width:18%;
-		left:74%; 
-	}
-
-	#a_shape_pink {
-		width:26%;
-	}
-
-	#a_shape_yellow {
-		width:20%;
-		right:74%;
 	}
 
 
@@ -141,21 +114,27 @@
 		font-size:12px;
 	}
 
-
 	/*Shape*/
 
 	#a_shape_green {
-		width:18%;
-		left:74%; 
+		top:50%; left:50%;
+		width:200px;
+		margin-top:0px; 
+		margin-left:170px;
 	}
 
 	#a_shape_pink {
-		width:26%;
+		top:50%; left:50%;
+		width:280px;
+		margin-top:-300px; 
+		margin-left:0px;
 	}
 
 	#a_shape_yellow {
-		width:20%;
-		right:74%;
+		top:50%; left:50%;
+		width:200px;
+		margin-top:-100px; 
+		margin-left:-380px;
 	}
 
 
@@ -237,17 +216,24 @@
 	/*Shape*/
 
 	#a_shape_green {
-		width:30%;
-		left:64%; 
+		top:50%; left:50%;
+		width:180px;
+		margin-top:-10px; 
+		margin-left:150px;
 	}
 
 	#a_shape_pink {
-		width:40%;
+		top:50%; left:50%;
+		width:240px;
+		margin-top:-250px; 
+		margin-left:0px;
 	}
 
 	#a_shape_yellow {
-		width:32%;
-		right:64%;
+		top:50%; left:50%;
+		width:200px;
+		margin-top:-100px; 
+		margin-left:-300px;
 	}
 
 
@@ -356,22 +342,24 @@
 	/*Shape*/
 
 	#a_shape_green {
-		width:30%;
-		left:64%; 
+		top:50%; left:50%;
+		width:120px;
+		margin-top:10px; 
+		margin-left:20px;
 	}
 
 	#a_shape_pink {
-		width:40%;
-		-webkit-transform:translateY(-20%);
-		-ms-transform:translateY(-20%);
-		-moz-transform:translateY(-20%);
-		-o-transform:translateY(-20%); 
-		transform:translateY(-20%); 
+		top:50%; left:50%;
+		width:160px;
+		margin-top:-220px; 
+		margin-left:-10px;
 	}
 
 	#a_shape_yellow {
-		width:30%;
-		right:64%;
+		top:50%; left:50%;
+		width:120px;
+		margin-top:-100px; 
+		margin-left:-160px;
 	}
 
 

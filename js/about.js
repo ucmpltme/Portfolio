@@ -29,10 +29,10 @@ $(window).scroll(function(){
 	title_wrap.style.top = 50 - (scrollTop / 12) + '%';
 
 	a_shape_green.style.top = 50 - (scrollTop / 17) + '%';
-	a_shape_pink.style.bottom = 55 + (scrollTop / 10) + '%';
-	a_shape_yellow.style.top = 38 - (scrollTop / 15) + '%';
+	a_shape_pink.style.top = 50 - (scrollTop / 10) + '%';
+	a_shape_yellow.style.top = 50 - (scrollTop / 15) + '%';
 
-})
+});
 
 
 
