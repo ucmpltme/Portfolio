@@ -258,7 +258,6 @@
 	}
 	
 	#bot_wave {
-		top:-28px;
 		width:100%; height:30px;
 		background-size:174px 30px;
 	}
@@ -385,7 +384,6 @@
 	}
 
 	#bot_wave {
-		top:-28px;
 		width:100%; height:30px;
 		background-size:174px 30px;
 	}
