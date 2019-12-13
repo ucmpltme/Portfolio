@@ -36,6 +36,8 @@ $(window).resize(function (){
 
 var nice = function(){
 
+	$('html').getNiceScroll().resize();
+
 	if(window.innerWidth < 720){
 		//console.log("Slow Scroll Stop!")
 

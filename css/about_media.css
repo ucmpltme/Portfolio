@@ -37,7 +37,18 @@
 
 
 
-@media screen and (min-width:1440px) and (max-width:1940px)  {  
+@media screen and (min-width:1600px) and (max-width:1940px)  {
+
+}
+
+
+
+@media screen and (min-width:1440px) and (max-width:1599px) {  
+
+	#profile_wrap {
+		width:84%;
+		padding-top:16%;
+	}
 
 }
 
@@ -56,7 +67,7 @@
 
 	#profile_wrap {
 		width:84%;
-		padding-top:10%;
+		padding-top:16%;
 	}
 
 }
@@ -84,7 +95,7 @@
 
 	#profile_wrap {
 		width:84%;
-		padding-top:10%;
+		padding-top:16%;
 	}
 
 }
@@ -113,6 +124,7 @@
 	html {
 		font-size:12px;
 	}
+
 
 	/*Shape*/
 
@@ -143,7 +155,7 @@
 	#profile_wrap {
 		width:76%;
 		max-width:500px;
-		padding-top:10%;
+		padding-top:16%;
 	}
 
 	#text_wrap {
@@ -245,9 +257,9 @@
 		background-size:174px 26px;
 	}
 	
-	#bot_wave {
-		width:100%; height:26px;
-		background-size:174px 26px;
+	#sub_bot_wave {
+		width:100%; height:30px;
+		background-size:174px 30px;
 	}
 
 
@@ -256,7 +268,7 @@
 	#profile_wrap {
 		width:76%;
 		min-width:320px; 
-		padding-top:10%;
+		padding-top:16%;
 	}
 
 	#circle_img {
@@ -371,9 +383,9 @@
 		background-size:174px 26px;
 	}
 
-	#bot_wave {
-		width:100%; height:26px;
-		background-size:174px 26px;
+	#sub_bot_wave {
+		width:100%; height:30px;
+		background-size:174px 30px;
 	}
 
 	
@@ -382,7 +394,7 @@
 	#profile_wrap {
 		width:76%;
 		min-width:230px;
-		padding-top:50%;
+		padding-top:80%;
 	}
 
 	#circle_img {

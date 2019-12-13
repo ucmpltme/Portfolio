@@ -110,6 +110,7 @@ ul#descript li > b {
 	margin-bottom:10px;
 	font-size:16px;
 	font-weight:400;
+	text-transform:uppercase;
 }
 
 ul#descript li:last-child {
@@ -236,11 +237,11 @@ ul#descript li a:hover span b.wave_bar{
 	background-color:#fff;
 }
 
-#bot_wave {
+#sub_bot_wave {
 	position:absolute;
-	top:-42px; left:0;
-	width:100%; height:42px;
-	background:url(../../img/wave_under_white.png);
+	top:-48px; left:0;
+	width:100%; height:50px;
+	background:url(../../img/wave_white.png);
 	background-repeat:repeat-x;
 }
 
