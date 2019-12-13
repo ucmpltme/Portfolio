@@ -36,12 +36,10 @@ $(window).resize(function (){
 
 var nice = function(){
 
-	$('html').getNiceScroll().resize();
+	$('html').getNiceScroll().remove();
 
 	if(window.innerWidth < 720){
 		//console.log("Slow Scroll Stop!")
-
-		$('html').getNiceScroll().remove();
 
 		// $('html').niceScroll({
 		// 	scrollspeed:0,
@@ -51,8 +49,6 @@ var nice = function(){
 	
 	}else {
 		//console.log("Slow Scroll Play!")
-
-		$('html').getNiceScroll().remove();
 
 		$('html').niceScroll({
 			zindex:100000,
