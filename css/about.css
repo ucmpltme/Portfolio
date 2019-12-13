@@ -182,7 +182,7 @@ ul li#text_right li b.wave_bar {
 	bottom:0; right:0;
 	width:600px; height:5px;
 	background:url(../img/underline.png) repeat-x;
-	background-color:red;
+	/*background-color:red;*/
 	-webkit-transition:all 5s ease-in;
 	-moz-transition:all 5s ease-in;
 	-o-transition:all 5s ease-in;
