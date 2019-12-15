@@ -126,6 +126,8 @@ $('.work_img').mouseleave(function(){
 });*/
 
 
+// IE Browser Check
+
 var agent = navigator.userAgent.toLowerCase();
 
 if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
@@ -148,6 +150,8 @@ if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') !
 	$('.work_all').attr('class', 'work_img work_all data-tilt');
 	$('.work_app').attr('class', 'work_img work_app m-data-tilt');
 };
+
+
 
 $(document).ready(function (){
 
