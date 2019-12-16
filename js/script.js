@@ -15,38 +15,47 @@ window.onbeforeunload = function() {
 };
 
 
+if(self.name != 'reload'){
 
+	self.name = 'reload';
+	self.location.reload(true);
 
-
-// Scroll
-
-var nice = function(){
-
-	$('html').getNiceScroll().remove();
-
-	if(window.innerWidth < 720){
-		//console.log("Slow Scroll Stop!")
-	}else {
-		//console.log("Slow Scroll Play!")
-		$('html').niceScroll({
-			zindex:100000,
-			scrollspeed:60,
-			mousescrollstep:40,
-			cursorcolor:"#5f6245",
-			cursoropacitymin:0,
-			cursoropacitymax:1,
-			cursorwidth:"8px",
-			cursorminheight:100,
-			cursorborder:"0px solid #fff",
-			cursorborderradius:"4px",
-			background:"none",
-			hidecursordelay:1000
-		});
-	}
+}else {
+	self.name = '';
 }
 
 
+
+
+
 $(document).ready(function() {
+
+	// Scroll
+
+	var nice = function(){
+
+		$('html').getNiceScroll().remove();
+
+		if(window.innerWidth < 720){
+			//console.log("Slow Scroll Stop!")
+		}else {
+			//console.log("Slow Scroll Play!")
+			$('html').niceScroll({
+				zindex:100000,
+				scrollspeed:80,
+				mousescrollstep:40,
+				cursorcolor:"#5f6245",
+				cursoropacitymin:0,
+				cursoropacitymax:1,
+				cursorwidth:"8px",
+				cursorminheight:100,
+				cursorborder:"0px solid #fff",
+				cursorborderradius:"4px",
+				background:"none",
+				hidecursordelay:1000
+			});
+		}
+	}
 
     // Browser check
 
