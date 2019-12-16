@@ -1,6 +1,6 @@
 
 // ready
-console.log("Loader Js In!")
+// console.log("Loader Js In!")
 
 
 
