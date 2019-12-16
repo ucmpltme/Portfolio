@@ -7,7 +7,7 @@ console.log (window.innerWidth, window.innerHeight);
 
 
 
-// onLoad
+// Reload
 
 window.onbeforeunload = function() {
     //console.log("Reload")
