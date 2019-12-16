@@ -49,7 +49,7 @@ var nice = function(){
 
 	var agent = navigator.userAgent.toLowerCase();
 
-	if (agent.indexOf("safari") != -1) {
+	if (agent.indexOf("Safari") > -1 && agent.indexOf("Chrome") == -1) {
 
 		alert("Yes, Safari!");
 		$('html').getNiceScroll().remove();
