@@ -186,6 +186,10 @@
 		box-shadow:none;
 	}
 
+	#img_wrap #text {
+		padding:12% 0;
+	}
+
 
 	/*Under Text*/
 
@@ -298,6 +302,10 @@
 		box-shadow:none;
 	}
 
+	#img_wrap #text {
+		padding:12% 0;
+	}
+
 
 	/*Under Text*/
 
@@ -408,6 +416,10 @@
 		-webkit-box-shadow:none;
 		-moz-box-shadow:none;
 		box-shadow:none;
+	}
+
+	#img_wrap #text {
+		padding:10% 0;
 	}
 
 

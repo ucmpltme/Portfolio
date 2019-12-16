@@ -195,7 +195,7 @@ ul#descript li a:hover span b.wave_bar{
 	position:relative;
 	top:0; left:50%;
 	width:84%;
-	max-width:1400px;
+	max-width:1040px;
 	padding:150px 0;
 	/*background-color:red;*/
 	-webkit-transform:translateX(-50%);
