@@ -6,28 +6,6 @@ console.log("Loader Js In!")
 
 
 
-// onLoad
-
-$(window).ready(function (){
-
-	//$('.item').css({'opacity':1});
-	
-});
-
-
-
-
-
-// Resize
-
-$(window).resize(function (){
-	
-});
-
-
-
-
-
 // Loader
 
 var dur = 1; 

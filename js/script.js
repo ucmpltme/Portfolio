@@ -7,19 +7,6 @@ console.log (window.innerWidth, window.innerHeight);
 
 
 
-// onLoad
-
-window.onbeforeunload = function() {
-
-    console.log("Reload")
-    scrollTo(0,0);
-
-};
-
-
-
-
-
 // Nice Scroll
 
 $(document).ready(function (){
@@ -36,24 +23,44 @@ $(window).resize(function (){
 
 var nice = function(){
 
-	$('html').getNiceScroll().remove();
+	// $('html').getNiceScroll().remove();
 
-	if(window.innerWidth < 720){
-		//console.log("Slow Scroll Stop!")
+	// if(window.innerWidth < 720){
+	// 	//console.log("Slow Scroll Stop!")
+	
+	// }else {
+	// 	//console.log("Slow Scroll Play!")
 
 		// $('html').niceScroll({
-		// 	scrollspeed:0,
-		// 	smoothscroll:false,
-		// 	autohidemode:"hidden"
+		// 	zindex:100000,
+		// 	scrollspeed:40,
+		// 	mousescrollstep:40,
+		// 	cursorcolor:"#5f6245",
+		// 	cursoropacitymin:0,
+		// 	cursoropacitymax:1,
+		// 	cursorwidth:"8px",
+		// 	cursorminheight:100,
+		// 	cursorborder:"0px solid #fff",
+		// 	cursorborderradius:"4px",
+		// 	background:"none",
+		// 	hidecursordelay:1000
 		// });
-	
+	// }
+
+	var agent = navigator.userAgent.toLowerCase();
+
+	if (agent.indexOf("safari") != -1) {
+
+		alert("Yes, Safari!");
+		$('html').getNiceScroll().remove();
+
 	}else {
-		//console.log("Slow Scroll Play!")
+		alert("No, Safari!");
 
 		$('html').niceScroll({
 			zindex:100000,
-			scrollspeed:100,
-			mousescrollstep:20,
+			scrollspeed:40,
+			mousescrollstep:40,
 			cursorcolor:"#5f6245",
 			cursoropacitymin:0,
 			cursoropacitymax:1,
@@ -61,11 +68,32 @@ var nice = function(){
 			cursorminheight:100,
 			cursorborder:"0px solid #fff",
 			cursorborderradius:"4px",
-			background:"",
+			background:"none",
 			hidecursordelay:1000
 		});
-	}
+	};
+
 }
+
+
+
+
+
+// Safari Browser Check
+
+
+
+
+
+
+// onLoad
+
+window.onbeforeunload = function() {
+
+    console.log("Reload")
+    scrollTo(0,0);
+
+};
 
 
 
