@@ -163,25 +163,6 @@ ul#work_list li+li {
 	/*background-color:#ddd;*/
 }
 
-.float-down {
-	-webkit-transform:scale(0.95);
-	-ms-transform:scale(0.95);
-	-moz-transform:scale(0.95);
-	-o-transform:scale(0.95);
-	transform:scale(0.95);
-	-webkit-transition:all 0.2s ease-in-out;
-	-moz-transition:all 0.2s ease-in-out;
-	-o-transition:all 0.2s ease-in-out;
-	transition:all 0.2s ease-in-out;
-}
-
-.float-up {
-	-webkit-transition:all 0.2s ease-in-out;
-	-moz-transition:all 0.2s ease-in-out;
-	-o-transition:all 0.2s ease-in-out;
-	transition:all 0.2s ease-in-out;
-}
-
 .work_img img {
 	width:100%;
 }
@@ -199,3 +180,26 @@ ul#work_list li+li {
 
 
 
+
+
+/*Addclass*/
+
+
+.float-down {
+	-webkit-transform:scale(0.95);
+	-ms-transform:scale(0.95);
+	-moz-transform:scale(0.95);
+	-o-transform:scale(0.95);
+	transform:scale(0.95);
+	-webkit-transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-o-transition:all 0.3s ease-in-out;
+	transition:all 0.3s ease-in-out;
+}
+
+.float-up {
+	-webkit-transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-o-transition:all 0.3s ease-in-out;
+	transition:all 0.3s ease-in-out;
+}

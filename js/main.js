@@ -112,9 +112,9 @@ $('ul#work_list li').mouseleave(function(){
 
 
 
-// Work Img Tilt
+// Work Img Tilt or Float
 
-/*$('.work_img').mouseenter(function(){
+$('.work_img').mouseenter(function(){
 	//console.log("Float-Down Mouse Enter");
 	$(this).addClass('float-down');
 });
@@ -123,53 +123,53 @@ $('.work_img').mouseleave(function(){
 	//console.log("Float-Up Mouse Leave");
 	$(this).removeClass('float-down');
 	$(this).addClass('float-up');
-});*/
+});
 
 
 // IE Browser Check
 
-var agent = navigator.userAgent.toLowerCase();
+// var agent = navigator.userAgent.toLowerCase();
 
-if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+// if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
 
-	//alert("Yes, IE!");
-	//$('.work_img').attr('class', 'work_img float-up');
+// 	//alert("Yes, IE!");
+// 	//$('.work_img').attr('class', 'work_img float-up');
 
-	$('.work_img').mouseenter(function(){
-		//console.log("Float-Down Mouse Enter");
-		$(this).addClass('float-down');
-	});
-	$('.work_img').mouseleave(function(){
-		//console.log("Float-Up Mouse Leave");
-		$(this).removeClass('float-down');
-		$(this).addClass('float-up');
-	});
+// 	$('.work_img').mouseenter(function(){
+// 		//console.log("Float-Down Mouse Enter");
+// 		$(this).addClass('float-down');
+// 	});
+// 	$('.work_img').mouseleave(function(){
+// 		//console.log("Float-Up Mouse Leave");
+// 		$(this).removeClass('float-down');
+// 		$(this).addClass('float-up');
+// 	});
 
-}else {
-	//alert("No, IE!");
-	$('.work_all').attr('class', 'work_img work_all data-tilt');
-	$('.work_app').attr('class', 'work_img work_app m-data-tilt');
-};
+// }else {
+// 	//alert("No, IE!");
+// 	$('.work_all').attr('class', 'work_img work_all data-tilt');
+// 	$('.work_app').attr('class', 'work_img work_app m-data-tilt');
+// };
 
 
 
-$(document).ready(function (){
+// $(document).ready(function (){
 
-	$('.data-tilt').tilt({
-		maxTilt:20,
-		perspective:1000,
-		easing:"cubic-bezier(.03,.98,.52,.99)",
-		scale:1.02,
-		speed:1000,
-		transition:true, 
-		disableAxis:'X',
-		reset:true, 
-		glare:false, 
-		maxGlare:0.1 
-	});
+// 	$('.data-tilt').tilt({
+// 		maxTilt:20,
+// 		perspective:1000,
+// 		easing:"cubic-bezier(.03,.98,.52,.99)",
+// 		scale:1.02,
+// 		speed:1000,
+// 		transition:true, 
+// 		disableAxis:'X',
+// 		reset:true, 
+// 		glare:false, 
+// 		maxGlare:0.1 
+// 	});
 
-	$('.m-data-tilt').tilt({
-		perspective:400
-	});
+// 	$('.m-data-tilt').tilt({
+// 		perspective:400
+// 	});
 
-});
+// });

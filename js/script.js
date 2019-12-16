@@ -7,93 +7,50 @@ console.log (window.innerWidth, window.innerHeight);
 
 
 
-// Nice Scroll
-
-$(document).ready(function (){
-
-	nice();
-	
-});
-
-$(window).resize(function (){
-
-	nice();
-	
-});
-
-var nice = function(){
-
-	// $('html').getNiceScroll().remove();
-
-	// if(window.innerWidth < 720){
-	// 	//console.log("Slow Scroll Stop!")
-	
-	// }else {
-	// 	//console.log("Slow Scroll Play!")
-
-		// $('html').niceScroll({
-		// 	zindex:100000,
-		// 	scrollspeed:40,
-		// 	mousescrollstep:40,
-		// 	cursorcolor:"#5f6245",
-		// 	cursoropacitymin:0,
-		// 	cursoropacitymax:1,
-		// 	cursorwidth:"8px",
-		// 	cursorminheight:100,
-		// 	cursorborder:"0px solid #fff",
-		// 	cursorborderradius:"4px",
-		// 	background:"none",
-		// 	hidecursordelay:1000
-		// });
-	// }
-
-	var agent = navigator.userAgent.toLowerCase();
-
-	if (agent.indexOf("Safari") > -1 && agent.indexOf("Chrome") == -1) {
-
-		alert("Yes, Safari!");
-		$('html').getNiceScroll().remove();
-
-	}else {
-		alert("No, Safari!");
-
-		$('html').niceScroll({
-			zindex:100000,
-			scrollspeed:40,
-			mousescrollstep:40,
-			cursorcolor:"#5f6245",
-			cursoropacitymin:0,
-			cursoropacitymax:1,
-			cursorwidth:"8px",
-			cursorminheight:100,
-			cursorborder:"0px solid #fff",
-			cursorborderradius:"4px",
-			background:"none",
-			hidecursordelay:1000
-		});
-	};
-
-}
-
-
-
-
-
-// Safari Browser Check
-
-
-
-
-
-
 // onLoad
 
 window.onbeforeunload = function() {
-
-    console.log("Reload")
+    //console.log("Reload")
     scrollTo(0,0);
-
 };
+
+
+
+
+
+// Nice Scroll
+
+// var nice = function(){
+
+// 	$('html').getNiceScroll().remove();
+
+// 	if(window.innerWidth < 720){
+// 		//console.log("Slow Scroll Stop!")
+// 	}else {
+// 		//console.log("Slow Scroll Play!")
+// 		$('html').niceScroll({
+// 			zindex:100000,
+// 			scrollspeed:40,
+// 			mousescrollstep:40,
+// 			cursorcolor:"#5f6245",
+// 			cursoropacitymin:0,
+// 			cursoropacitymax:1,
+// 			cursorwidth:"8px",
+// 			cursorminheight:100,
+// 			cursorborder:"0px solid #fff",
+// 			cursorborderradius:"4px",
+// 			background:"none",
+// 			hidecursordelay:1000
+// 		});
+// 	}
+// }
+
+
+// nice();
+
+// $(window).resize(function (){
+// 	nice();
+// });
 
 
 
