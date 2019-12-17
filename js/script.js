@@ -120,31 +120,9 @@ $(document).ready(function() {
 
 // Header Show
 
-// var scrollTop = $(window).scrollTop();
-// //console.log(scrollTop);
-
-// $(window).scroll(function(){
-
-// 	var curTop = $(window).scrollTop();
-// 	//console.log(scrollTop, curTop);
-
-// 	if(curTop > scrollTop){
-// 		// Scroll Down
-// 		$('header').css('top',-40);
-// 		// $('#hamburger').css('top',-40);
-// 	}else{
-// 		// Scroll Up
-// 		$('header').css('top',20);
-// 		// $('#hamburger').css('top',20);
-// 	}
-
-// 	scrollTop = curTop;
-// });
-
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
-var headerHeight = $('header').outerHeight();
 
 $(window).scroll(function(e){
 	didScroll = true;
