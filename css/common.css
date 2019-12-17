@@ -394,6 +394,8 @@ footer {
 	position:relative;
 	width:100%; height:260px;
 	background-color:#fff;
+	float:none; clear:none;
+	overflow: hidden;
 }
 
 #bot_wave {
