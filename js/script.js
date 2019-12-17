@@ -123,6 +123,7 @@ $(document).ready(function() {
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
+var headerHeight = $('header').outerHeight();
 
 $(window).scroll(function(e){
 	didScroll = true;
