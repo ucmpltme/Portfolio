@@ -120,26 +120,62 @@ $(document).ready(function() {
 
 // Header Show
 
-var scrollTop = $(window).scrollTop();
-//console.log(scrollTop);
+// var scrollTop = $(window).scrollTop();
+// //console.log(scrollTop);
 
-$(window).scroll(function(){
+// $(window).scroll(function(){
 
-	var curTop = $(window).scrollTop();
-	//console.log(scrollTop, curTop);
+// 	var curTop = $(window).scrollTop();
+// 	//console.log(scrollTop, curTop);
 
-	if(curTop > scrollTop){
-		// Scroll Down
-		$('header').css('top',-40);
-		// $('#hamburger').css('top',-40);
-	}else{
-		// Scroll Up
-		$('header').css('top',20);
-		// $('#hamburger').css('top',20);
+// 	if(curTop > scrollTop){
+// 		// Scroll Down
+// 		$('header').css('top',-40);
+// 		// $('#hamburger').css('top',-40);
+// 	}else{
+// 		// Scroll Up
+// 		$('header').css('top',20);
+// 		// $('#hamburger').css('top',20);
+// 	}
+
+// 	scrollTop = curTop;
+// });
+
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var headerHeight = $('header').outerHeight();
+
+$(window).scroll(function(e){
+	didScroll = true;
+})
+
+setInterval(function() {
+	if(didScroll){
+		hasScrolled();
+		didScroll = false;
+	}
+}, 250);
+
+function hasScrolled() {
+	var st = $(this).scrollTop();
+
+	if(Math.abs(lastScrollTop - st) <= delta){
+		return;
 	}
 
-	scrollTop = curTop;
-});
+	if(st > lastScrollTop && st > headerHeight){
+		//scroll down
+		$('header').css('top',-40);
+		$('#hamburger').css('top',-40);
+	}else {
+		//scroll up
+		$('header').css('top',20);
+		$('#hamburger').css('top',20);
+	}
+
+	lastScrollTop = st;
+}
 
 
 
