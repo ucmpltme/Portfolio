@@ -10,7 +10,7 @@
 
 var dur = 1; 
 
-//$(document).ready(function() {
+$(document).ready(function() {
 
 	var titleLoad = setTimeout(function(){
 
@@ -94,7 +94,7 @@ var dur = 1;
 	    .animate({'opacity':1}, 500);
 
 	}, 100)
-//});
+});
 
 
 
